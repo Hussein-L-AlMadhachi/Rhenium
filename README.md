@@ -5,11 +5,14 @@ Rhenium 2023  version 0.2.1
 Rhenium is an easy to use automated setup tool to compile and install programs in different software and hardware environments.
 
 ---
-
 # Content
 * [Why to use Rhenium](#Why-to-use-Rhenium)
-* Get started
-* Automate your software installation
+* [Get started](#get-started)
+* [Automate your software installation](#automate-your-software-installation)
+* [Writing your Installation file](#writing-your-installation-file)
+    * [Operating System Specifi Script](#operating-system-specifi-script)
+    * [Hardware Specific Script](#hardware-specific-script)
+    * [Software Environment specific script](#software-environment-specific-script)
 * Final words
 
 ---
@@ -179,7 +182,7 @@ path {/run/systemd/system}
     # shell script goes here
     echo your system uses system
 end
-
+```
 
 ## building your installation logic
 

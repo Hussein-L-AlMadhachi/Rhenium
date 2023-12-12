@@ -83,7 +83,7 @@ or use `rhenium install` or clone your remote repository with `rhenium clone ..`
 
 here is an example of and `Installfile`
 
-``` 
+``` ruby
 # NOTE: indentation is neglected by Rhenium
 
 pci {NVIDIA}
@@ -132,7 +132,7 @@ end
 
 ## Operating System Specifi Script
 
-```
+``` ruby
 os {arch}
     # shell script goes here
     echo you are using Arch linux
@@ -169,17 +169,18 @@ user@machine:~$ lspci
 
 then copy the text are you looking for from the output. here we will take `GeForce MX350` as an example to write a specific shell script for this
 
-```
+``` rudy
 pci {GeForce MX350}
     # shell script goes here
     echo you have GeForce MS350 GPU
+end
 ```
 
 ## Software Environment specific script
 
 for example operating systems that uses systemd (famous component used in many Linux distros) usually have this path `/run/systemd/system`
 
-```
+``` ruby
 path {/run/systemd/system}
     # shell script goes here
     echo your system uses system
@@ -190,7 +191,7 @@ end
 
 You can use the `not` operator to assign a script if a condition wasn't met
 
-```
+``` ruby
 os not {alpine}
     echo you are not using Alpine Linux
 end
@@ -202,7 +203,7 @@ You can use logical operators `and` and `or` to combine more than one condition 
 
 for example:
 
-```
+``` ruby
 os {fedora} and path {/etc/rhenium} and pci {NVIDIA} and path not {/etc/apt}
     echo you are using Fedora Linux
     echo you are using Rhenium
@@ -217,7 +218,7 @@ if you ran into any problems there is a debug mode that will detail how it is ru
 
 instead of regular `rhenium install` you write
 
-```
+``` sh
 user@machine:~$ rhenium debug
 ```
 

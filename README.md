@@ -1,4 +1,4 @@
-# Rhenium Automated Setup tool
+# Rhenium
 
 Rhenium 2023  version 0.2.1  (formly Active Installer)
 

@@ -34,7 +34,7 @@ then it will ask you to select your operating system
 
 NOTE: this may emit some error messages that can be ignored.
 
-``` bash
+``` sh
 user@host:~$ sh install.sh
 ``` 
 
@@ -42,7 +42,7 @@ user@host:~$ sh install.sh
 if you have `installfile` downloaded locally you just navigate to the this file
 then you start the setup as shown below
 
-``` bash
+``` sh
 user@host:~$ cd  <path to 'InstallFile'>
 user@machine:~$ active install
 ```
@@ -50,13 +50,13 @@ user@machine:~$ active install
 if what you want to install is on a remote repository you can download it then
 install it directly with this
 
-``` bash
+``` sh
 user@host:~$ rhenium clone  <remote repository URL>
 ```
 
 if you want to change any of the settings
 
-``` bash
+``` sh
 user@host:~$ sudo rhenium setup
 ```
 
@@ -78,7 +78,7 @@ or use `rhenium install` or clone your remote repository with `rhenium clone ..`
 
 here is an example of and `Installfile`
 
-```
+``` ruby
 # NOTE: indentation is neglected by Rhenium
 
 pci {NVIDIA}

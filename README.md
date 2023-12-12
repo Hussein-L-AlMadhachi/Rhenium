@@ -13,9 +13,9 @@ Rhenium is an easy to use automated setup tool to compile and install programs i
     * [Operating System Specifi Script](#operating-system-specifi-script)
     * [Hardware Specific Script](#hardware-specific-script)
     * [Software Environment specific script](#software-environment-specific-script)
-    * [building your installation logic]()
-* [Debug Mode]()
-* Final words
+    * [building your installation logic](#building-your-installation-logic)
+* [Debug Mode](#debug-mode)
+* [Final words](#final-words)
 
 ---
 

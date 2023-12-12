@@ -78,7 +78,7 @@ or use `rhenium install` or clone your remote repository with `rhenium clone ..`
 
 here is an example of and `Installfile`
 
-``` yaml
+``` 
 # NOTE: indentation is neglected by Rhenium
 
 pci {NVIDIA}

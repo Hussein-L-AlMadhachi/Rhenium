@@ -147,8 +147,8 @@ this is for Arch Linux here is a list of all supported operating systems
 `{cent os}` for CentOS  
 `{alpine}` for Apline Linux  
 `{gentoo}` for Gentoo Linux  
-`{freebsd}` for FreeBSD 
-`{netbsd}` for NetBSD 
+`{freebsd}` for FreeBSD  
+`{netbsd}` for NetBSD  
 `{openbsd}` for OpenBSD  
 `{debian}` for Debian Linux  
 `{ubuntu}` for Ubuntu Linux  

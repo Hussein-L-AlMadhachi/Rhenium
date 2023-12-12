@@ -1,6 +1,6 @@
 # Rhenium Automated Setup tool
 
-Rhenium 2023  version 0.2.1
+Rhenium 2023  version 0.2.1  (formly Active Installer)
 
 Rhenium is an easy to use automated setup tool to compile and install programs in different software and hardware environments.
 

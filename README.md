@@ -72,10 +72,10 @@ user@host:~$ sudo rhenium setup
 2. Create a file called `InstallFile` which we will talk about how to organise
 your scripts inside it in the next section.
 
-3. add [`rhenium.sh`](https://github.com/Hussein-L-AlMadhachi/Rhenium/raw/main/rhenium.sh)
+3. add [`installer.sh`](https://github.com/Hussein-L-AlMadhachi/Rhenium/raw/main/installer.sh)
 to the same same location as `InstallFile`.
 
-4. Now the user can install your program by running this `rhenium.sh`
+4. Now the user can install your program by running this `installer.sh`
 or use `rhenium install` or clone your remote repository with `rhenium clone ..`
 
 

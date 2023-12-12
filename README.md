@@ -13,6 +13,8 @@ Rhenium is an easy to use automated setup tool to compile and install programs i
     * [Operating System Specifi Script](#operating-system-specifi-script)
     * [Hardware Specific Script](#hardware-specific-script)
     * [Software Environment specific script](#software-environment-specific-script)
+    * [building your installation logic]()
+* [Debug Mode]()
 * Final words
 
 ---
@@ -186,7 +188,7 @@ end
 
 ## building your installation logic
 
-you can use the `not` operator to assign a script if a condition wasn't met
+You can use the `not` operator to assign a script if a condition wasn't met
 
 ```
 os not {alpine}
@@ -194,9 +196,9 @@ os not {alpine}
 end
 ```
 
-this works from `pci` and `path` too.
+this also works for `pci` and `path` too.
 
-you can use logical operators `and` and `or` to combine more than one condition and assign a script that is specific to this.
+You can use logical operators `and` and `or` to combine more than one condition and assign a script that is specific to this.
 
 for example:
 
@@ -209,7 +211,7 @@ os {fedora} and path {/etc/rhenium} and pci {NVIDIA} and path not {/etc/apt}
 end
 ```
 
-# More Options
+# Debug Mode
 
 if you ran into any problems there is a debug mode that will detail how it is running your scripts. here is how to run Rhenium in debug mode
 

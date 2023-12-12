@@ -34,7 +34,7 @@ installed on the targeted system.
 # Get started
 
 Rhenium can be installed simply by running this in the command line 
-[script](https://raw.githubusercontent.com/Hussein-L-AlMadhachi/Active-Installer/main/install.sh)
+[script](https://raw.githubusercontent.com/Hussein-L-AlMadhachi/Rhenium/main/install.sh)
 then it will ask you to select your operating system
 
 NOTE: this may emit some error messages that can be ignored.
@@ -72,7 +72,7 @@ user@host:~$ sudo rhenium setup
 2. Create a file called `InstallFile` which we will talk about how to organise
 your scripts inside it in the next section.
 
-3. add [`rhenium.sh`](https://github.com/Hussein-L-AlMadhachi/Active-Installer/raw/main/active-installer.sh)
+3. add [`rhenium.sh`](https://github.com/Hussein-L-AlMadhachi/Rhenium/raw/main/rhenium.sh)
 to the same same location as `InstallFile`.
 
 4. Now the user can install your program by running this `rhenium.sh`
@@ -155,7 +155,7 @@ this is for Arch Linux here is a list of all supported operating systems
 `{void}` for Void Linux  
 
 
-if you think we forgot some POSIC complient operating systems tell us in the [Discussions](https://github.com/Hussein-L-AlMadhachi/Active-Installer/discussions)
+if you think we forgot some POSIC complient operating systems tell us in the [Discussions](https://github.com/Hussein-L-AlMadhachi/Rhenium/discussions)
 
 
 ## Hardware Specific Script
@@ -227,5 +227,5 @@ Have you seen any problem?
 Do you think there is something we forgot?  
 Do you have some ideas about how to improve this program?  
 
-Join our [Community discussions](https://github.com/Hussein-L-AlMadhachi/Active-Installer/discussions)  
-Report an [Isseue](https://github.com/Hussein-L-AlMadhachi/Active-Installer/issues)
+Join our [Community discussions](https://github.com/Hussein-L-AlMadhachi/Rhenium/discussions)  
+Report an [Isseue](https://github.com/Hussein-L-AlMadhachi/Rhenium/issues)

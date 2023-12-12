@@ -1,6 +1,6 @@
 # Rhenium
 
-Rhenium 2023  version 0.2.1  (formly Active Installer)
+Rhenium 2023  version 0.2.1  (formly rhenium Installer)
 
 Rhenium is an easy to use automated setup tool to compile and install programs in different software and hardware environments.
 
@@ -49,7 +49,7 @@ then you start the setup as shown below
 
 ``` sh
 user@host:~$ cd  <path to 'InstallFile'>
-user@machine:~$ active install
+user@machine:~$ rhenium install
 ```
 
 if what you want to install is on a remote repository you can download it then

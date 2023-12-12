@@ -130,7 +130,7 @@ end
 
 ```
 
-## Operating System Specifi Script
+## Operating System Specific Script
 
 ``` 
 os {arch}
@@ -155,7 +155,7 @@ this is for Arch Linux here is a list of all supported operating systems
 `{void}` for Void Linux  
 
 
-if you think we forgot some POSIC complient operating systems tell us in the [Discussions](https://github.com/Hussein-L-AlMadhachi/Rhenium/discussions)
+if you think we forgot some POSIC complient operating systems create an [issue]([https://github.com/Hussein-L-AlMadhachi/Rhenium/discussions](https://github.com/Hussein-L-AlMadhachi/Rhenium/issues))
 
 
 ## Hardware Specific Script

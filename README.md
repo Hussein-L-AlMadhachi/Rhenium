@@ -10,10 +10,10 @@ Rhenium is an easy to use automated setup tool to compile and install programs i
 * [Get started](#get-started)
 * [Automate your software installation](#automate-your-software-installation)
 * [Writing your Installation file](#writing-your-installation-file)
-    * [Operating System Specific Script](#operating-system-specific-script)
-    * [Hardware Specific Script](#hardware-specific-script)
+    * [Operating System specific script](#operating-system-specific-script)
+    * [Hardware specific script](#hardware-specific-script)
     * [Software Environment specific script](#software-environment-specific-script )
-    * [building your installation logic](#building-your-installation-logic)
+    * [Building your installation logic](#building-your-installation-logic)
 * [Debug Mode](#debug-mode)
 * [Final words](#final-words)
 
@@ -130,7 +130,7 @@ end
 
 ```
 
-## Operating System Specific Script
+## Operating System specific script
 
 ``` 
 os {arch}
@@ -159,7 +159,7 @@ this is for Arch Linux here is a list of all supported operating systems
 if you think we forgot some POSIC complient operating systems create an [issue]([https://github.com/Hussein-L-AlMadhachi/Rhenium/discussions](https://github.com/Hussein-L-AlMadhachi/Rhenium/issues))
 
 
-## Hardware Specific Script
+## Hardware specific script
 first use lspci command to list all the devices
 ```
 user@machine:~$ lspci
@@ -188,7 +188,7 @@ path {/run/systemd/system}
 end
 ```
 
-## building your installation logic
+## Building your installation logic
 
 You can use the `not` operator to assign a script if a condition wasn't met
 

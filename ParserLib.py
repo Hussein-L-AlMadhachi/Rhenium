@@ -1,6 +1,6 @@
-#/usr/bin/env python3
+#/bin/env python3
 
-from os import system , path
+from os import system , path , chdir
 import json
 
 __version__ = "0.2.1"
@@ -86,8 +86,6 @@ class SettingFile:
         else:
             print( "you have to choose on of the given numbers only" )
 
-    
-
 
 class InstallFile:
     def __init__( self ):
@@ -109,6 +107,13 @@ class InstallFile:
     def _check_os( self , os ):
         os = os.strip()
         return self.settings.get("os") == os
+    
+    def cd( self , dir_path ):
+        try:
+            chdir( path.expanduser(path.strip()) )
+        except Exception as error:
+            print( "cd: " , error )
+            exit(-1)
 
     def parse( self , scriptline ):
 
@@ -243,7 +248,11 @@ class InstallFile:
             elif line.strip()[0] == "#":
                 continue
 
-            if keep_going:
+            elif line.strip()[:2] == "cd":
+                self.cd( line.strip()[2:] )
+                continue
+            
+            elif keep_going:
                 if line.strip() == "end":
                     if debug:
                         if should_execute:

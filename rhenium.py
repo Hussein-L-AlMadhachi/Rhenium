@@ -19,8 +19,8 @@ SettingObj = ParserLib.SettingFile()
 #   install option
 def install():
     SettingObj.load()
-    if os.path.isfile( "InstallFile" ):
-        ParserLib.InstallFile().execute( "InstallFile" )
+    if os.path.isfile( "installfile" ):
+        ParserLib.InstallFile().execute( "installfile" )
     else:
         print("[!] No installation file")
         exit(0)

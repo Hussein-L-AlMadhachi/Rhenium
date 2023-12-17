@@ -50,7 +50,7 @@ if you have `installfile` downloaded locally you just navigate to the this file
 then you start the setup as shown below
 
 ``` sh
-user@host:~$ cd  <path to 'InstallFile'>
+user@host:~$ cd  <path to 'installfile'>
 user@machine:~$ rhenium install
 ```
 
@@ -71,11 +71,11 @@ user@host:~$ sudo rhenium setup
 
 1. You need to have Rhenium installed
 
-2. Create a file called `InstallFile` which we will talk about how to organise
+2. Create a file called `installfile` which we will talk about how to organise
 your scripts inside it in the next section.
 
 3. add [`installer.sh`](https://github.com/Hussein-L-AlMadhachi/Rhenium/raw/main/installer.sh)
-to the same same location as `InstallFile`.
+to the same same location as `installfile`.
 
 4. Now the user can install your program by running this `installer.sh`
 or use `rhenium install` or clone your remote repository with `rhenium clone ..`
@@ -83,7 +83,7 @@ or use `rhenium install` or clone your remote repository with `rhenium clone ..`
 
 # Writing your Installation file
 
-here is an example of and `Installfile`
+here is an example of and `installfile`
 
 ``` 
 # NOTE: indentation is neglected by Rhenium

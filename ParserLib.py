@@ -1,6 +1,6 @@
-#/bin/env python3
+#/usr/bin/env python3
 
-from os import system , path , chdir
+from os import system , path , chdir , environ
 import json
 
 __version__ = "0.2.1"
@@ -114,6 +114,48 @@ class InstallFile:
         except Exception as error:
             print( "cd: " , error )
             exit(-1)
+    
+    def export_env( self , statement ):
+        if not ("=" in statement):
+            print( "Export ERROR:   expected '=' to separate the variable and the value." )
+            return False
+        
+        var = statement[ :statement.index("=") ].lstrip()
+        val = statement[ statement.index("=")+1 : ].rstrip()
+
+        if var[0] == "\"" or var[0] == "\'" or var[0] == "`":
+            var = var[1:]
+        if var[-1] == "\"" or var[-1] == "\'" or var[-1] == "`":
+            var = var[:-1]
+
+        if val[-1] == ";":
+            val = val[:-1]
+        if val[0] == "\"" or val[0] == "\'" or val[0] == "`":
+            val = val[1:]
+        if val[-1] == "\"" or val[-1] == "\'" or val[-1] == "`":
+            val = val[:-1]
+
+        while "$" in val and val[val.index("$")-1] != "\\":
+            pos = val.index("$")
+            while( val[pos-1] == "\\" ):
+                pos = val[pos+1:].index("$")
+            
+            env_var = ""
+            i = pos+1
+            while i<len(val) and ( val[i].isalnum() or val[i] == "_" ):
+                env_var += val[i]
+                i+=1
+
+            if environ.get( env_var ) == None:
+                print( "Export ERROR:   the environment variable" , env_var , "do not exist" )
+                return False
+
+            val = val.replace( "$"+env_var , environ[env_var] )
+            
+    
+        
+        environ[ var ] = val
+        return True
 
     def parse( self , scriptline ):
 
@@ -251,6 +293,10 @@ class InstallFile:
             elif line.strip()[:2] == "cd":
                 self.cd( line.strip()[2:] )
                 continue
+            elif line.strip()[:6] == "export":
+                if debug:
+                    print(  counter , " |\texecuting export:" , line[:-1] )
+                self.export_env( line.strip()[7:] )
             
             elif keep_going:
                 if line.strip() == "end":

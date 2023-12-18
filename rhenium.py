@@ -27,8 +27,8 @@ def install():
 
 def debug():
     SettingObj.load()
-    if os.path.isfile( "InstallFile" ):
-        ParserLib.InstallFile().execute( "InstallFile", debug=True )
+    if os.path.isfile( "installfile" ):
+        ParserLib.InstallFile().execute( "installfile", debug=True )
     else:
         print("[!] No installation files found here")
         exit(0)

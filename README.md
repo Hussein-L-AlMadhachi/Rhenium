@@ -152,11 +152,11 @@ this is for Arch Linux here is a list of all supported operating systems
 `{freebsd}` for FreeBSD  
 `{netbsd}` for NetBSD  
 `{openbsd}` for OpenBSD  
-`{dragonfly}` for DragonFly BSD 
+`{dragonfly}` for DragonFly BSD  
 `{debian}` for Debian Linux  
 `{ubuntu}` for Ubuntu Linux  
 `{void}` for Void Linux  
-`{nix os}` for Nix OS
+`{nix os}` for Nix OS  
 
 if you think we forgot some POSIC complient operating systems create an [issue]([https://github.com/Hussein-L-AlMadhachi/Rhenium/discussions](https://github.com/Hussein-L-AlMadhachi/Rhenium/issues))
 

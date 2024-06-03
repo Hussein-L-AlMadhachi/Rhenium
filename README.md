@@ -227,7 +227,7 @@ user@machine:~$ rhenium debug
 
 # Final words
 Have you seen any problem?  
-Do you think there is something we forgot?  
+Do you think there is something I forgot?  
 Do you have some ideas about how to improve this program?  
 
 Join our [Community discussions](https://github.com/Hussein-L-AlMadhachi/Rhenium/discussions)  
